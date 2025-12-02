@@ -1,0 +1,47 @@
+\documentclass{beamer}
+
+% --- UNIVERSAL PREAMBLE BLOCK (Adapted for Beamer) ---
+% \usepackage{fontspec}
+\usepackage[english]{babel}
+
+\babelprovide[import, onchar=ids fonts]{english}
+
+% Set Noto Sans as the main font for both serif (rm) and sans-serif (sf) 
+% slots, as Beamer defaults to sans-serif.
+
+
+% --- THEME SETTINGS ---
+% Using a clean, standard theme. You can change 'Madrid' to 'Berlin', 'Copenhagen', etc.
+\usetheme{Madrid}
+\usecolortheme{default}
+
+% Remove navigation symbols for a cleaner look
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+
+% The Slide
+\begin{frame}
+    % University Name as Heading
+    \frametitle{Jain (Deemed to be University)}
+
+    \begin{center}
+        \vspace{0.5cm}
+        
+        % Optional: Add a title for the content block
+        {\Large \textbf{Student Details}}
+        
+        \vspace{1cm}
+
+        % Using a table for clean alignment of details
+        \renewcommand{\arraystretch}{1.5} % Adds space between rows
+        \begin{tabular}{l l}
+            \textbf{Name:}              & Divya Jain \\
+            \textbf{USN:}               & JUUG25BTECH24211 \\
+            \textbf{Branch \& Section:} & AIML-A \\
+        \end{tabular}
+        
+    \end{center}
+\end{frame}
+
+\end{document}
